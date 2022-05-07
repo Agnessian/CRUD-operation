@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Html CRUD with pure JavaScript
+        </title>
+        <link rel="Stylesheet" href="styles.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label>Full Name*</label><label class="validation-error hide" id="fullnameValidationError">This field is required</label>
+                            <input type="text" name="fullname" id="fullname"> 
+                        </div>
+                        <div> 
+                            <label>EMP code</label>
+                            <input type="number" name="empcode" id="empcode"> 
+                        </div>
+                        <div>
+                            <label>Salary</label>
+                            <input type="number" name="salary" id="salary"> 
+                        </div>
+                        <div>
+                            <label>City</label>
+                            <input type="text" name="city" id="city"> 
+                        </div>
+                        <div class="form-action-buttons">
+                            <input type="submit" name="Submit"> 
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="employeeList">
+                        <thread>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>EMP Code</th>
+                                <th>Salary</th>
+                                <th>City</th>
+                                <th></th>
+                            </tr>
+                        </thread>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <script src="script.js"></script>
+    </body>
+</html>
